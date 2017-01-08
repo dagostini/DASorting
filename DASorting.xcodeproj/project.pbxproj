@@ -10,6 +10,12 @@
 		775D51A01E22BDFE00E0C74B /* DASorting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775D51961E22BDFE00E0C74B /* DASorting.framework */; };
 		775D51A51E22BDFE00E0C74B /* DASortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775D51A41E22BDFE00E0C74B /* DASortingTests.swift */; };
 		775D51A71E22BDFE00E0C74B /* DASorting.h in Headers */ = {isa = PBXBuildFile; fileRef = 775D51991E22BDFE00E0C74B /* DASorting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		775D51B11E22BE2800E0C74B /* DASelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775D51B01E22BE2800E0C74B /* DASelectionSort.swift */; };
+		775D51B31E22C73800E0C74B /* DAArray+Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775D51B21E22C73800E0C74B /* DAArray+Sorting.swift */; };
+		775D51B51E22CC8000E0C74B /* DAInsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775D51B41E22CC8000E0C74B /* DAInsertionSort.swift */; };
+		775D51B71E22D15D00E0C74B /* DAShellSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775D51B61E22D15D00E0C74B /* DAShellSort.swift */; };
+		775D51B91E22D89100E0C74B /* DAMergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775D51B81E22D89100E0C74B /* DAMergeSort.swift */; };
+		775D51BB1E22E22700E0C74B /* DAQuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775D51BA1E22E22700E0C74B /* DAQuickSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		775D519F1E22BDFE00E0C74B /* DASortingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DASortingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		775D51A41E22BDFE00E0C74B /* DASortingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DASortingTests.swift; sourceTree = "<group>"; };
 		775D51A61E22BDFE00E0C74B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		775D51B01E22BE2800E0C74B /* DASelectionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DASelectionSort.swift; sourceTree = "<group>"; };
+		775D51B21E22C73800E0C74B /* DAArray+Sorting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DAArray+Sorting.swift"; sourceTree = "<group>"; };
+		775D51B41E22CC8000E0C74B /* DAInsertionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAInsertionSort.swift; sourceTree = "<group>"; };
+		775D51B61E22D15D00E0C74B /* DAShellSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAShellSort.swift; sourceTree = "<group>"; };
+		775D51B81E22D89100E0C74B /* DAMergeSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAMergeSort.swift; sourceTree = "<group>"; };
+		775D51BA1E22E22700E0C74B /* DAQuickSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAQuickSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,12 @@
 		775D51981E22BDFE00E0C74B /* DASorting */ = {
 			isa = PBXGroup;
 			children = (
+				775D51B21E22C73800E0C74B /* DAArray+Sorting.swift */,
+				775D51B41E22CC8000E0C74B /* DAInsertionSort.swift */,
+				775D51B81E22D89100E0C74B /* DAMergeSort.swift */,
+				775D51BA1E22E22700E0C74B /* DAQuickSort.swift */,
+				775D51B01E22BE2800E0C74B /* DASelectionSort.swift */,
+				775D51B61E22D15D00E0C74B /* DAShellSort.swift */,
 				775D51991E22BDFE00E0C74B /* DASorting.h */,
 				775D519A1E22BDFE00E0C74B /* Info.plist */,
 			);
@@ -148,6 +166,7 @@
 				TargetAttributes = {
 					775D51951E22BDFE00E0C74B = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					775D519E1E22BDFE00E0C74B = {
@@ -196,6 +215,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				775D51B11E22BE2800E0C74B /* DASelectionSort.swift in Sources */,
+				775D51B91E22D89100E0C74B /* DAMergeSort.swift in Sources */,
+				775D51B71E22D15D00E0C74B /* DAShellSort.swift in Sources */,
+				775D51B31E22C73800E0C74B /* DAArray+Sorting.swift in Sources */,
+				775D51BB1E22E22700E0C74B /* DAQuickSort.swift in Sources */,
+				775D51B51E22CC8000E0C74B /* DAInsertionSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +345,7 @@
 		775D51AB1E22BDFE00E0C74B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = agostini.tech.DASorting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +365,7 @@
 		775D51AC1E22BDFE00E0C74B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +384,7 @@
 		775D51AE1E22BDFE00E0C74B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DASortingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = agostini.tech.DASortingTests;
@@ -367,6 +396,7 @@
 		775D51AF1E22BDFE00E0C74B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DASortingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = agostini.tech.DASortingTests;
