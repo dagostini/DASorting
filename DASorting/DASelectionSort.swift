@@ -22,7 +22,7 @@ class DASelectionSort<T: Comparable> {
                     minIndex = j
                 }
             }
-            result.swap(itemAtIndex: i, withItemAtIndex: minIndex)
+            result.swapItems(itemAtIndex: i, withItemAtIndex: minIndex)
         }
         
         return result

@@ -34,7 +34,6 @@ class DAQuickSort<T: Comparable> {
         let v = original[low]
         
         while true {
-            
             i += 1
             while original[i] < v {
                 i += 1
@@ -55,10 +54,10 @@ class DAQuickSort<T: Comparable> {
                 break
             }
             
-            original.swap(itemAtIndex: i, withItemAtIndex: j)
+            original.swapItems(itemAtIndex: i, withItemAtIndex: j)
         }
         
-        original.swap(itemAtIndex: low, withItemAtIndex: j)
+        original.swapItems(itemAtIndex: low, withItemAtIndex: j)
         
         return j
     }

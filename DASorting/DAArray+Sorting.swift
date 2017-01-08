@@ -33,17 +33,17 @@ extension Array where Element: Comparable {
 
 extension Array {
     
-    public mutating func swap(itemAtIndex firstIndex: Index, withItemAtIndex secondIndex: Index) {
+    public mutating func swapItems(itemAtIndex firstIndex: Index, withItemAtIndex secondIndex: Index) {
         
-        let temp = self[firstIndex]
-        self[firstIndex] = self[secondIndex]
-        self[secondIndex] = temp
+        if firstIndex != secondIndex {
+            swap(&self[firstIndex], &self[secondIndex])
+        }
     }
     
     public mutating func shuffle() {
         
         for i in 0..<count {
-            self.swap(itemAtIndex: i, withItemAtIndex: Array.Index(arc4random_uniform(UInt32(count))))
+            self.swapItems(itemAtIndex: i, withItemAtIndex: Array.Index(arc4random_uniform(UInt32(count))))
         }
     }
 }
