@@ -49,8 +49,6 @@ class DASortingTests: XCTestCase {
     func testPerformance() {
         
         runTestWithMaxItems(maxItems: 1_000)
-//        runTestWithMaxItems(maxItems: 10_000)
-//        runTestWithMaxItems(maxItems: 100_000)
     }
     
     private func runTestWithMaxItems(maxItems: Int) {
@@ -106,12 +104,12 @@ class DASortingTests: XCTestCase {
         stopwatch.printElapsedTime()
     }
     
-    private func randomIntArray(maxElements: Int) -> [Int] {
+    private func randomIntArray(maxElements: Int) -> [String] {
         
-        var result: [Int] = []
+        var result: [String] = []
         
         for i in 0..<maxElements {
-            result.append(i)
+            result.append("Test Item \(i)")
         }
         result.shuffle()
         
