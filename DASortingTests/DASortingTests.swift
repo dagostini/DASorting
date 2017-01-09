@@ -49,6 +49,9 @@ class DASortingTests: XCTestCase {
     func testPerformance() {
         
         runTestWithMaxItems(maxItems: 1_000)
+        runTestWithMaxItems(maxItems: 5_000)
+        runTestWithMaxItems(maxItems: 10_000)
+        runTestWithMaxItems(maxItems: 100_000)
     }
     
     private func runTestWithMaxItems(maxItems: Int) {
