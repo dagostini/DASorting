@@ -20,7 +20,14 @@ class DASortingTests: XCTestCase {
     
     func testInsertionSort_IntArray() {
         let originalArray = [4, 1, 2, 6, 9, 10, 7, 8, 5, 3]
-        let sortedArray = originalArray.insertionSorted()
+        let sortedArray = originalArray.insertionSortedSwaps()
+        
+        XCTAssertEqual(originalArray.sorted(), sortedArray)
+    }
+    
+    func testInsertionSortWithShifting_IntArray() {
+        let originalArray = [4, 1, 2, 6, 9, 10, 7, 8, 5, 3]
+        let sortedArray = originalArray.insertionSortedShifts()
         
         XCTAssertEqual(originalArray.sorted(), sortedArray)
     }
@@ -47,7 +54,6 @@ class DASortingTests: XCTestCase {
     }
     
     func testPerformance() {
-        
         runTestWithMaxItems(maxItems: 1_000)
         runTestWithMaxItems(maxItems: 5_000)
         runTestWithMaxItems(maxItems: 10_000)
@@ -69,7 +75,7 @@ class DASortingTests: XCTestCase {
         // Insertion Sort
         originalArray = randomIntArray(maxElements: maxItems)
         stopwatch = Stopwatch()
-        _ = originalArray.insertionSorted()
+        _ = originalArray.insertionSortedShifts()
         print("=============================================")
         print("Insertion Sort")
         stopwatch.printElapsedTime()
@@ -107,12 +113,12 @@ class DASortingTests: XCTestCase {
         stopwatch.printElapsedTime()
     }
     
-    private func randomIntArray(maxElements: Int) -> [String] {
+    private func randomIntArray(maxElements: Int) -> [Int] {
         
-        var result: [String] = []
+        var result: [Int] = []
         
         for i in 0..<maxElements {
-            result.append("Test Item \(i)")
+            result.append(i)
         }
         result.shuffle()
         

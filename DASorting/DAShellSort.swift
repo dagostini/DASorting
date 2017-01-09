@@ -22,8 +22,12 @@ class DAShellSort<T:Comparable> {
         
         while h >= 1 {
             for i in h..<length {
-                for j in stride(from: i, to: h - 1, by: -h) where result[j] < result[j - h] {
-                    result.swapItems(itemAtIndex: j, withItemAtIndex: j - h)
+                for j in stride(from: i, to: h - 1, by: -h) {
+                    if result[j] < result[j - h] {
+                        result.swapItems(itemAtIndex: j, withItemAtIndex: j - h)
+                    } else {
+                        break
+                    }
                 }
             }
             h /= 3

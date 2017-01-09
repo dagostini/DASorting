@@ -14,8 +14,12 @@ extension Array where Element: Comparable {
         return DASelectionSort.sort(self)
     }
     
-    public func insertionSorted() -> [Element] {
+    public func insertionSortedSwaps() -> [Element] {
         return DAInsertionSort.sort(self)
+    }
+    
+    public func insertionSortedShifts() -> [Element] {
+        return DAInsertionSort.sortWithShifting(self)
     }
     
     public func shellSorted() -> [Element] {
